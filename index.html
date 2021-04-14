@@ -3,27 +3,41 @@
 <head>
 	<title>gentlethink</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<style>
+
+body {
+	background-color: #5eaad2;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  /*whatever width you want*/
+}
+
+</style>	
 	
 </head>
 <body>
 
-<img width="600" height="100" alt="gentlethink" src="images/gentlethink.png">
 
-<script>
-//Create div element
-var div = document.createElement('div');
-//Give a height to div
-div.style.height = '100vh';
-//Append div to document
-document.body.appendChild(div);
-//Add event listener so document can listen to mouse movements
-div.addEventListener('mousemove', function(event) {
-var x = event.clientX,
-y = event.clientY;
-div.style.backgroundColor = 'rgb('+ x +', '+y+', +100)'
-} )
-</script>
 
 <div class="outer">
   <div class="middle">
