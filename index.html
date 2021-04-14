@@ -8,14 +8,46 @@ body {
 	background-color: #5eaad2;
 }
 
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /*whatever width you want*/
+}
+
 </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
 	
 </head>
 <body>
-<div align="center">
+
+
+<!-- <div align="center">
 <img width="600" height="100" alt="gentlethink" src="images/gentlethink.png">
+</div>
+-->
+
+<div class="outer">
+  <div class="middle">
+    <div class="inner">
+      <img width="600" height="100" alt="gentlethink" src="images/gentlethink.png">
+    </div>
+  </div>
 </div>
 </body>
 </html>
